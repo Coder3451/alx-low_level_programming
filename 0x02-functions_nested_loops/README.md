@@ -1,21 +1,37 @@
-# C language functions and nested loops
+# Nested loop functions
 
-##  Tasks
+## Tasks
 
-### 0. _putchar
-### 0. _putchar
-### 0. _putchar
-### 0. _putchar
-### 0. _putchar
-### 0. _putchar
-### 0. _putchar
-### 0. _putchar
-### 0. _putchar
-### 0. _putchar
-### 0. _putchar
-### 0. _putchar
-### 0. _putchar
-### 0. _putchar
-### 0. _putchar
-### 0. _putchar
-### 0. _putchar
+### task 0
+
+### task 1
+
+### task 2
+
+### task 3
+
+### task 4
+
+### task 5
+
+### task 6
+
+### task 7
+
+### task 8
+
+### task 9
+
+### task 10
+
+### task 11
+
+### task 12
+
+### task 13
+
+### task 14
+
+### task 15
+
+### task 16
