@@ -1,5 +1,3 @@
-#include <stdio.h>
-#include <unistd.h>
 #include "main.h"
 /**
  * main - entry point
@@ -16,14 +14,4 @@ int main(void)
 		index++;
 	}
 	return (0);
-}
-/**
- * _putchar - it print character
- * @c: takes one character parameter
- *
- * Return: return charcter c
- */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
 }
