@@ -1,6 +1,4 @@
 #include <stdio.h>
-#include <unistd.h>
-#include "main.h"
 #include "_putchar.c"
 /**
  * main - entry point
@@ -8,14 +6,14 @@
  */
 int main(void)
 {
-	char display[] = "_putchar\n";
-	int i = 0;
+	char message[] = "_putchar\n";
+	int index = 0;
 
-	while (display[i] != '\0')
+	while (message[index] != '\0')
 
 	{
-		_putchar(display[i]);
-		i++;
+		_putchar(message[index]);
+		index++;
 	}
 	return (0);
 }
