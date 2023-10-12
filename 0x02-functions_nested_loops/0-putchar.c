@@ -2,16 +2,6 @@
 #include <unistd.h>
 #include "main.h"
 /**
- * _putchar - it print character
- * @c: takes one character parameter
- *
- * Return: return charcter c
- */
-int _putchar(char c)
-{
-	return (write(1, &c, 1));
-}
-/**
  * main - entry point
  * Return: return 0 when successfully executed
  */
