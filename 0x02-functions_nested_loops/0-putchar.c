@@ -1,19 +1,29 @@
+#include <stdio.h>
+#include <unistd.h>
 #include "main.h"
-#include "putcharacter.c"
 /**
  * main - entry point
  * Return: return 0 when successfully executed
  */
 int main(void)
 {
-	_putchar('_');
-	_putchar('p');
-	_putchar('u');
-	_putchar('t');
-	_putchar('c');
-	_putchar('h');
-	_putchar('a');
-	_putchar('r');
-	_putchar('\n');
+	char message[] = "_putchar\n";
+	int index = 0;
+
+	while (message[index] != '\0')
+	{
+		_putchar(message[index]);
+		index++;
+	}
 	return (0);
+}
+/**
+ * _putchar - it print character
+ * @c: takes one character parameter
+ *
+ * Return: return charcter c
+ */
+int _putchar(char c)
+{
+	return (write(1, &c, 1));
 }
