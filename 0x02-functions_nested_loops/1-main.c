@@ -1,17 +1,12 @@
-#include <unistd.h>
 #include "main.h"
-/**
- * print_alphabet - it print alphbet in lowercase
- *
- * Return: it doesn't return anything
- */
-void print_alphabet(void)
-{
-	char ch;
 
-	for (ch = 'a'; ch <= 'z'; ch++)
-	{
-		_putchar(ch);
-	}
-	_putchar('\n');
+/**
+ * main - check the code for Alx students
+ *
+ * Return: Always 0.
+ */
+int main(void)
+{
+	print_alphabet();
+	return (0);
 }

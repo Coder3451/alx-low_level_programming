@@ -1,12 +1,17 @@
+#include <unistd.h>
 #include "main.h"
-
 /**
- * main - check the code
+ * print_alphabet - it print alphabet in lowercase
  *
- * Return: Always 0.
+ * Return: it doesn't return anything
  */
-int main(void)
+void print_alphabet(void)
 {
-	print_alphabet();
-	return (0);
+	char ch;
+
+	for (ch = 'a'; ch <= 'z'; ch++)
+	{
+		_putchar(ch);
+	}
+	_putchar('\n');
 }
