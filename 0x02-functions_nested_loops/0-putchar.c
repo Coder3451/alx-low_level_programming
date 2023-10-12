@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <unistd.h>
 #include "main.h"
+#include "_putchar.c"
 /**
  * main - entry point
  * Return: return 0 when successfully executed
