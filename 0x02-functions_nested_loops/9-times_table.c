@@ -24,16 +24,24 @@ void times_table(void)
 			{
 				_putchar('0' + firstDigit);
 				_putchar('0' + lastDigit);
+				if (j != 9)
+				{
+					_putchar(44);
+					_putchar(' ');
+					if (j >= 2 && i <= 4)
+						_putchar(' ');
+				}
 			}
 			else
 			{
 				_putchar('0' + k);
-			}
-
-			if (j != 9)
-			{
-				_putchar(44);
-				_putchar(' ');
+				if (j != 9)
+				{
+					_putchar(44);
+					_putchar(' ');
+					if (j >= 2 && i <= 4)
+						_putchar(' ');
+				}
 			}
 		}
 		_putchar('\n');
