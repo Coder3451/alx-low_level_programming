@@ -9,13 +9,13 @@ void more_numbers(void)
 	int num;
 	int howMany;
 
-	for (howMany = 0; howMany <= 10; howMany++)
+	for (howMany = 0; howMany < 10; howMany++)
 	{
 		for (num = 0; num <= 14; num++)
 		{
 			int firstDigit;
 			int secondDigit;
-			
+
 			firstDigit = num / 10;
 			secondDigit = num % 10;
 			if (num > 9)
