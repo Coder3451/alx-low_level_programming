@@ -1,0 +1,11 @@
+#!/bin/bash
+
+password=$(./101-keygen)
+
+# Perform some logic to validate the password
+#In this example, we'll check if the password length is 43
+if [ ${#password} -eq 13 ]; then
+    echo "Tada! Congrats"
+else
+    echo "Invalid password"
+fi
