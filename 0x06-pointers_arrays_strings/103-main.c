@@ -26,7 +26,7 @@ int main(void)
 	}
 	n = "1234567890";
 	m = "1";
-	res = infinte_add(n, m, r2, 10);
+	res = infinite_add(n, m, r2, 10);
 	if (res == 0)
 	{
 		printf("Error\n");
@@ -37,7 +37,7 @@ int main(void)
 	}
 	n = "999999999";
 	m = "1";
-	res - infinite_add(n, m, r2, 10);
+	res = infinite_add(n, m, r2, 10);
 	if (res == 0)
 	{
 		printf("Error\n");
