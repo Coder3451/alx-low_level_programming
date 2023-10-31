@@ -1,3 +1,5 @@
+
+int _sqrt_helper(int, int, int);
 /**
  * _sqrt_recursion - Rreturns the natural square root of a number.
  * @n: integer variable
@@ -13,8 +15,8 @@ int _sqrt_recursion(int n)
 	if (n == 0 || n == 1)
 	{
 		return (n);
-		return (_sqrt_helper(n, 1, n));
 	}
+	return (_sqrt_helper(n, 1, n));
 }
 /**
  * _sqrt_helper - Is a helper function that takes three integers as input.
