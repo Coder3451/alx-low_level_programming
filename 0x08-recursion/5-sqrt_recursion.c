@@ -1,4 +1,3 @@
-
 int _sqrt_helper(int, int, int);
 /**
  * _sqrt_recursion - Rreturns the natural square root of a number.
@@ -28,7 +27,7 @@ int _sqrt_recursion(int n)
  */
 int _sqrt_helper(int n, int min, int max)
 {
-	int mid;
+	long int mid;
 
 	if (max < min)
 	{
