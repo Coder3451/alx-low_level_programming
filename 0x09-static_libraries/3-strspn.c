@@ -1,23 +1,36 @@
 /**
- * _strcmp - Compares two strings
- * @s1: first character pointer
- * @s2: second character pointer
+ * _strspn - Gets the length of a prefix substring.
+ * @s: character pointer
+ * @accept: character pointer
  *
- * Return: integer
+ * Return: The number of bytes in the initial segment of s.
+ * which consist only of bytes from accept.
  */
-int _strcmp(char *s1, char *s2)
+unsigned int _strspn(char *s, char *accept)
 {
-	int i = 0;
+	unsigned int count = 0;
+	int found;
+	int i;
 
-	while (s1[i] != '\0' && s2[i] != '\0')
+	while (*s)
 	{
-		if (s1[i] != s2[i])
+		found = 0;
+		for (i = 0; accept[i]; i++)
 		{
-			return (s1[i] - s2[i]);
+			if (*s == accept[i])
+			{
+				count++;
+				found = 1;
+				break;
+			}
 		}
-		i++;
+		if (!found)
+		{
+			break;
+		}
+		s++;
 	}
 
-	return (s1[i] - s2[i]);
+	return (count);
 }
 
