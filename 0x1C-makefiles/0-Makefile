@@ -1,0 +1,17 @@
+.PHONY: all school clean
+
+all: school
+
+school: main.o school.o
+	@echo "Generateing executable.."
+	gcc -o $@ $^
+
+main.o: main.c m.h
+	gcc -c $<
+
+school.o: school.c m.h
+	gcc -c $<
+
+clean:
+	@echo "Cleaning up..."
+	rm main.o school.o school
