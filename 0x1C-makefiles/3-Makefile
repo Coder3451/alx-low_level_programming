@@ -26,4 +26,4 @@ fclean:
 
 re:
 	-$(MAKE) fclean
-	@$(MAKE) all
+	$(CC) $(OBJ) -o $(NAME)
