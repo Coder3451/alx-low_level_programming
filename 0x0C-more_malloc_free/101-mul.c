@@ -73,14 +73,14 @@ int _atoi(char *s)
 int mul(int a, int b)
 {
 	int product;
-	
+
 	product = a * b;
 
 	return (product);
 }
 
 /**
- * print_numbers - Prints an integer
+ * print_number - Prints an integer
  * @n: The integer to be printed
  */
 void print_number(int n)
@@ -90,7 +90,7 @@ void print_number(int n)
 		_putchar('-');
 		n = -n;
 	}
-	
+
 	if (n / 10)
 	{
 		print_number(n / 10);
@@ -101,12 +101,14 @@ void print_number(int n)
 
 /**
  * main - Multiplies two positive numbers.
+ * @argc: count arguments.
+ * @argv: arguments passed.
  *
  * Return: Always 0.
  */
 int main(int argc, char *argv[])
 {
-	unsigned num1, num2;
+	unsigned int num1, num2;
 	int i, j;
 	int result;
 
