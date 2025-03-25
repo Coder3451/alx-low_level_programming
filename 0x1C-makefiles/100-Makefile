@@ -9,13 +9,13 @@ CFLAGS = -Wall -Werror -Wextra -pedantic
 all: $(NAME)
 
 $(NAME): $(OBJ) m.h
-	$(CC) -Wall -Werror -Wextra -pedantic $(OBJ) -o $(NAME)
+	$(CC) $(CFLAGS) $(OBJ) -o $(NAME)
 
 main.o: main.c m.h
-	$(CC) -c $^
+	$(CC) $(CFLAGS) -c $< -O $@
 
 school.o: school.c m.h
-	$(CC) -c $^
+	$(CC) $(CFLAGS) -c $< -o $@
 
 clean:
 	-rm -f *~ $(NAME)
